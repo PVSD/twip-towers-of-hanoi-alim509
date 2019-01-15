@@ -8,18 +8,14 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int numDiscs = 0;
-        int pegBoard[][];
+        int numDiscs;
 
         System.out.println("Let's play Tower of Hanoi!");
         System.out.println("Please input the number of discs you would like to play with (3 - 8).");
 
         numDiscs = sc.nextInt();
-        pegBoard = new int[numDiscs][3];
 
         System.out.println("\nInstructions:");
-        for (int i = 1; i <= numDiscs; i++) {
-            System.out.println(i + ": Move one disk from tower " + i + " to " + i);
-        }
+        Solve.shift(numDiscs, 1, 2, 3);
     }
 }
