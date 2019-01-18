@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 /**
  * Created by al5091 on 1/14/19.
  */
