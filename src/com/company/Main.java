@@ -10,8 +10,7 @@ public class Main {
 
         int numDiscs;
 
-        System.out.println("Let's play Tower of Hanoi!");
-        System.out.println("Please input the number of discs you would like to play with (3 - 8).");
+        System.out.println("Let's play Tower of Hanoi!\nPlease input the number of discs you would like to play with (0 - 14).\nAny other number will throw an error or will be extensively long to read or compute.");
 
         numDiscs = sc.nextInt();
 
