@@ -7,6 +7,8 @@ import java.util.Scanner;
  */
 public class Solve {
 
+    private static int counter = 1;
+
     public static void shift(int n, int startPole, int otherPole, int endPole)
     {
         if (n == 0)
@@ -14,7 +16,8 @@ public class Solve {
             return;
         }
         shift(n - 1, startPole, endPole, otherPole);
-        System.out.println("Move disc " + n + " from tower " + startPole + " to " + endPole);
+        System.out.println(counter + ": Move disc " + n + " from tower " + startPole + " to " + endPole);
+        counter++;
         shift(n - 1, otherPole, startPole, endPole);
     }
 
