@@ -16,5 +16,7 @@ public class Main {
 
         System.out.println("\nInstructions:");
         Solve.shift(numDiscs, 1, 2, 3);
+        
+        System.out.println("\nThat is how you solve the Tower of Hanoi with " + numDiscs + " discs.");
     }
 }
